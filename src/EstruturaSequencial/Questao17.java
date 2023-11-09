@@ -25,6 +25,9 @@ public class Questao17 {
         if(metrosQuadrados % 108 == 0){
             quantidadeLatas18L = metrosQuadrados / 108;
             valorA80 = (int)quantidadeLatas18L * 80;
+        }else if(metrosQuadrados < 108){
+            quantidadeLatas18L = 1;
+            valorA80 = (int)quantidadeLatas18L * 80;
         }else{
             quantidadeLatas18L = (metrosQuadrados / 108) + 1;
             valorA80 = (int)quantidadeLatas18L * 80;
